@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DManager" customModuleProvider="target">
+            <connections>
+                <outlet property="menu" destination="Svs-bo-CxZ" id="jWp-3b-ZT5"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="Svs-bo-CxZ">
+            <items>
+                <menuItem title="Enable/Disable DM" id="snq-Jf-YNe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="enableDisable:" target="Voe-Tx-rLC" id="gyC-Me-hTV"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="hFo-5V-I1y"/>
+                <menuItem title="Quit" id="szu-k8-00g">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="xxf-0j-LRC"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="2" y="-399"/>
+        </menu>
+    </objects>
+</document>
